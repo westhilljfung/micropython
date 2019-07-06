@@ -27,3 +27,6 @@
 [submodule "lib/tinyusb"]
 	path = lib/tinyusb
 	url = https://github.com/hathach/tinyusb
+[submodule "lib/lv_bindings"]
+	path = lib/lv_bindings
+	url = https://github.com/westhilljfung/lv_binding_micropython.git
