@@ -7,6 +7,7 @@ MICROPY_PY_USSL = 0
 MICROPY_SSL_AXTLS = 0
 MICROPY_FATFS = 1
 MICROPY_PY_BTREE = 1
+MICROPY_PY_LVGL = 1
 
 #FROZEN_DIR = scripts
 FROZEN_MPY_DIR = modules
@@ -217,6 +218,14 @@ ifeq ($(MICROPY_FATFS), 1)
 LIB_SRC_C += \
 	lib/oofatfs/ff.c \
 	lib/oofatfs/ffunicode.c
+endif
+
+ifeq ($(MICROPY_PY_LVGL), 1)
+LIB_SRC_C += \
+	lib/lv_bindings/driver/esp32/modlvesp32.c \
+	lib/lv_bindings/driver/esp32/modILI9341.c \
+	lib/lv_bindings/driver/esp32/modxpt2046.c \
+	lib/lv_bindings/driver/esp32/modrtch.c
 endif
 
 DRIVERS_SRC_C = $(addprefix drivers/,\
