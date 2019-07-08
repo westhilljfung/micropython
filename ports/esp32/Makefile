@@ -225,7 +225,7 @@ LIB_SRC_C += \
 	lib/lv_bindings/driver/esp32/modlvesp32.c \
 	lib/lv_bindings/driver/esp32/modILI9341.c \
 	lib/lv_bindings/driver/esp32/modhx8357.c \
-	lib/lv_bindingd/driver/esp32/modstmpe610.c \
+	lib/lv_bindings/driver/esp32/modstmpe610.c \
 	lib/lv_bindings/driver/esp32/modxpt2046.c \
 	lib/lv_bindings/driver/esp32/modrtch.c
 endif
