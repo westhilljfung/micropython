@@ -5,4 +5,5 @@ FLASH_SIZE = 4MB
 #CROSS_COMPILE = xtensa-esp32-elf-
 #SDKCONFIG = boards/sdkconfig.spiram
 BAUD = 115200
+
 include Makefile
