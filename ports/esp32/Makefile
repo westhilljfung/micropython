@@ -228,7 +228,7 @@ LIB_SRC_C += \
 	lib/lv_bindings/driver/esp32/modstmpe610.c \
 	lib/lv_bindings/driver/esp32/modxpt2046.c \
 	lib/lv_bindings/driver/esp32/modrtch.c \
-	lib/lv_bindingd/driver/esp32/modTFTFeatherWing.c
+	lib/lv_bindings/driver/esp32/modTFTFeatherWing.c
 endif
 
 DRIVERS_SRC_C = $(addprefix drivers/,\
