@@ -187,6 +187,7 @@ extern const struct _mp_obj_module_t mp_module_ILI9341;
 extern const struct _mp_obj_module_t mp_module_HX8357;
 extern const struct _mp_obj_module_t mp_module_xpt2046;
 extern const struct _mp_obj_module_t mp_module_rtch;
+extern const struct _mp_obj_module_t mp_module_TFTFeatherWing;
 
 #define MICROPY_PORT_BUILTIN_MODULES \
     { MP_OBJ_NEW_QSTR(MP_QSTR_esp), (mp_obj_t)&esp_module }, \
@@ -222,6 +223,7 @@ extern const struct _mp_obj_module_t mp_module_rtch;
     { MP_OBJ_NEW_QSTR(MP_QSTR_HX8357), (mp_obj_t)&mp_module_HX8357 }, \
     { MP_OBJ_NEW_QSTR(MP_QSTR_xpt2046), (mp_obj_t)&mp_module_xpt2046 }, \
     { MP_OBJ_NEW_QSTR(MP_QSTR_rtch), (mp_obj_t)&mp_module_rtch }, \
+    { MP_OBJ_NEW_QSTR(MP_QSTR_TFTFeatherWing), (mp_obj_t)&mp_module_TFTFeatherWing }, \
 
 #define MP_STATE_PORT MP_STATE_VM
 
